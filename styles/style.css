@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: arial, sans-serif;
 }
+
 a {
     font-family: arial, sans-serif;
     text-decoration: none;
@@ -35,7 +36,7 @@ ul {
     top: 0;
     margin: 1.4em 1.6em;
     padding: 0;
-    font-size: 1.3em
+    font-size: 1.3em;
 }
 #top-right li {
     display: inline;
@@ -63,18 +64,18 @@ ul {
 }
 #center-elements {
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 #logo {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 #search-bar {
     border: 1px solid #e9eaed;
     border-radius: 20px;
-    width: 556px;
+    width: 55.6em;
     height: 40px;
 }
 #search-bar:hover {
@@ -90,4 +91,43 @@ ul {
     width: 15px;
     vertical-align: middle;
     padding-left: 8px;
+}
+#search-buttons {
+    text-align: center;
+    margin-top: 45px;
+}
+#search-buttons a {
+    color:#5f6368;
+    padding: .8em 1.1em;
+    margin: 0 5px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    border: 1px;
+    border-radius: 3px;
+    font-size: 1.4em
+}
+#search-buttons a:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    color: rgba(0,0,0,0.87);
+}
+#ul-bottom-left {
+    background-color: #f2f2f2;
+    outline: 1px solid  #e4e4e4;
+    width: 100%;
+    position: fixed;   
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+#ul-bottom-left li {
+    float: left;
+    font-size: 1.4em;
+    padding: .8em .7em;
+    margin: 2px 5px;
+}
+@media (max-width: 600px) {
+    .bar-bottom-right {
+    display: none;
+    }
 }
